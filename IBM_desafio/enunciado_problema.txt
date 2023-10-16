@@ -1,0 +1,42 @@
+Os alunos receberam uma série de problemas matemáticos que possuem pontos associados a eles.  Dada uma matriz de pontos classificados, minimize o número de problemas que um aluno precisa resolver com base nesses critérios.
+
+1. Devem sempre resolver o primeiro problema, índice i = 0.
+
+  2. Depois de resolver o i-ésimo problema, eles optam por resolver o próximo problema (i+1) ou pular e resolver o problema (i+2).
+
+3. Os alunos devem continuar resolvendo problemas até que a diferença entre a pontuação máxima e mínima das questões resolvidas até o momento atinja ou exceda um limite especificado.
+
+4. Se os alunos não conseguirem atingir ou ultrapassar o limite, deverão resolver todos os problemas.
+
+Retorne o número mínimo de problemas que um aluno precisa resolver.
+
+Exemplo
+limite = 4
+
+pontos = [1, 2, 3, 5, 8]
+
+Se um aluno resolver pontos[0] = 1, pontos[2]=3 e pontos[3] = 5, então a diferença entre os pontos mínimo e máximo resolvidos é 5-1 = 4. Isso atende ao limite, então o  o aluno deve resolver pelo menos 3 problemas.  Retorno 3.
+
+pontos = 1 (min), 2, 3, 5 (máximo), 8
+
+Se o limite for 7, novamente serão necessários 3 problemas para resolver os problemas 0, 2 e 4 onde pontos[4]-pontos[0]=8-1=7.  Isso atende ao limite, portanto o aluno deve resolver pelo menos 3 problemas.  Retorno 3.
+
+ Se o limite for superior a 7, não há como atingir o limite.  Nesse caso, todos os problemas precisam ser resolvidos e o valor de retorno é 5.
+
+ Descrição da função
+
+ Complete a função minNum no editor.
+
+ minNum possui os seguintes parâmetros: limite int.  a diferença mínima necessária int points[n]: uma matriz ordenada de inteiros
+
+ Devoluções
+
+ int: o número mínimo de problemas que devem ser resolvidos
+
+ Restrições
+
+ • 1 <=  n <= 100
+
+ • 1 <= pontos[i] ≤ 1000
+
+ • 1 <= k <= 1000

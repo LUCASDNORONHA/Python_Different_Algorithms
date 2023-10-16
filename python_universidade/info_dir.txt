@@ -1,0 +1,14 @@
+Universidade Cruzeiro do Sul
+Aluno: Lucas Dias Noronha
+Curso: Superior de Tecnologia em Inteligência Artificial
+Disciplina: Programação de Computadores Avançada
+
+
+Inforamações gerais:
+
+Neste diretório estão armazenadas alguns dos códigos do qual eu estudei durante a 
+disciplina de Programação de Computadores Avançada na Universidade Cruzeiro do Sul
+durante o segundo semestre do curso de graduação em Inteligência Artificial. 
+
+Aqui estão armazenados apenas alguns códigos dos quais consegui tempo para armazenar.
+Eu tomei a liberdade de armazenar esses códigos para ilustrar minha jornada de aprendizado.
