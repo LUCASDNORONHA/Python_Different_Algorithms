@@ -1,3 +1,8 @@
+import pprint
+
+def p(v):
+    pprint.pprint(v, sort_dicts=False, widht=40)
+
 lista = []
 
 for numero in range(10):
@@ -24,6 +29,11 @@ novos_produtos = [
     for produto in produtos
 ]
 
-print(novos_produtos)
-print(*novos_produtos, sep='\n')
+# print(novos_produtos)
+# print(*novos_produtos, sep='\n')
+
+# p(novos_produtos)
+
+# lista = [m for n in range(10) if n < 5]
+# print(lista)
 
