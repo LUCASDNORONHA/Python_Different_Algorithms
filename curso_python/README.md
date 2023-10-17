@@ -1,6 +1,6 @@
-#Curso Python 3
+# Curso Python 3
 
-###Conteúdo abordado no curso:
+### Conteúdo abordado no curso:
 
 - Python 3 uma introdução sólida à linguagem Python, com ênfase na lógica de programação;
 - Python 3 abordagem na programação procedural e funcional;
