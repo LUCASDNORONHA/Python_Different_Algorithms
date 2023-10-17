@@ -14,6 +14,10 @@ import matplotlib.pylab as plt
 urlRegião = 'https://raw.githubusercontent.com/chandez/Estados-Cidades-IBGE/master/csv/regioes.csv'
 urlEstado = 'https://raw.githubusercontent.com/chandez/Estados-Cidades-IBGE/master/csv/estados.csv'
 
+# PERGUNTA:
+# Qual a porcentagem de estados por região?
+# Qual a quantidade de estados por região?
+
 # Importa a tabela de dados.
 dfRegiao = pd.read_csv(urlRegião)
 dfEstado = pd.read_csv(urlEstado)
@@ -52,6 +56,8 @@ plt.title('Estados por região', loc = 'center', fontdict = {'fontsize':15, 'fon
 plt.axis('equal')
 
 # Apresenta o gráfico de setores (pizza).
+# Os rótulos internos apresentam a porcentagem de estados por região.
+# os externos apresentam o nome da região e a quantidade de estados por região.
 plt.show()
 
 
