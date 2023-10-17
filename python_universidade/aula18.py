@@ -58,9 +58,13 @@ municipios_por_estado = df_innerEstadoCidade.groupby('UF')['Cidade'].count()
 # Exibindo o resultado
 print(municipios_por_estado)
 
-
-
-
+# Criando um gráfico de barras
+municipios_por_estado.plot(kind='bar', figsize=(12, 6))
+plt.title('Número de Municípios por Estado')
+plt.xlabel('Estado (UF)')
+plt.ylabel('Número de Municípios')
+plt.xticks(rotation=0)  # Rotação dos rótulos do eixo x
+plt.show()
 
 
 # Atenção
@@ -85,14 +89,3 @@ número de municípios por estado, pois evita distorções devido a registros du
 fornece um resultado mais preciso.
 
 '''
-
-# Importando Matplolib
-import matplotlib.pyplot as plt
-
-# Criando um gráfico de barras
-municipios_por_estado.plot(kind='bar', figsize=(12, 6))
-plt.title('Número de Municípios por Estado')
-plt.xlabel('Estado (UF)')
-plt.ylabel('Número de Municípios')
-plt.xticks(rotation=0)  # Rotação dos rótulos do eixo x
-plt.show()
