@@ -22,6 +22,7 @@ urlCidade = 'https://raw.githubusercontent.com/chandez/Estados-Cidades-IBGE/mast
 dfEstado = pd.read_csv(urlEstado)
 dfCidade = pd.read_csv(urlCidade)
 
+# Deletando colunas desnecessárias
 del dfEstado['CodigoUf']
 del dfCidade['Codigo']
 # print(dfEstado,'\n'+'-'*40+'\n', dfCidade,'\n'+'-'*40)
