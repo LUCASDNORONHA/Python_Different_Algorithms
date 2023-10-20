@@ -1,4 +1,5 @@
 # RECURSIVIDADE
+
 # Calculo do fatorial
 
 # Função comum sem recursividade.
@@ -23,3 +24,15 @@ n = int(input('Digite um número inteiro para calcularmos o fatorial : '))
 
 # print(fatorial(n))
 print(fatorial_recursiva(n)) 
+
+"""
+    A recursividade é um conceito em programação no qual uma função chama a si mesma 
+    para resolver um problema. É comumente usado em situações em que um problema pode 
+    ser decomposto em subproblemas semelhantes. Aqui está um exemplo clássico de 
+    cálculo do fatorial de um número.
+
+    O fatorial de um número inteiro não negativo n, denotado por n!, é o produto de 
+    todos os números inteiros de 1 a n. Ele é definido da seguinte forma:
+
+    n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1
+"""

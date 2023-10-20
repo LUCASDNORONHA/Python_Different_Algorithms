@@ -2,71 +2,73 @@
 
 # Classes
 
-# Importando o módulo 'math'
-import math
+# Definindo uma classe chamada 'Pessoa'.
 
-# Definindo uma classe chamada 'Circulo'.
-class Circulo:
-    # Método construtor que inicializa o raio do círculo.
-    def __init__(self, raio):
-        self.raio = raio
-        
-    # Método pára calcular a área do circulo.
-    def calcular_area(self):
-        area = math.pi * self.raio ** 2
-        return area
-    
-# Criando uma instância (objeto) da classe 'Circulo'.
-circulo1 = Circulo(5)
+class Pessoa:
+    # Método construtor que inicializa os atributos da classe
+    def __init__(self, nome, idade):
+        self.nome = nome # Atributo 'nome'.
+        self.idade = idade # Atributo 'idade'.
 
-# Acessando o raio.
-raio_do_circulo = circulo1.raio
+    # Método para exibir informações sobre a pessoa.
+    def apresentar(self):
+        print(f'Meu nome é {self.nome} e tenho {self.idade} anos.')
 
-# Calculando a área do círculo.
-area_do_circulo = circulo1.calcular_area()
+# Criando uma instância (objeto) da classe 'Pessoa'.
+pessoa1 = Pessoa('Lucas', 25)
 
-# Imprimindo
-print(f'Raio do circulo : {raio_do_circulo}')
-print(f'Área do círculo : {area_do_circulo:.2f}')
+# Acessando atributos.
+print(f'Nome : {pessoa1.nome}')
+print(f'Idade : {pessoa1.idade}')
+
+# Acessando método 'apresentar()' da classe pessoa pelo objeto objeto instaciado.
+pessoa1.apresentar()
 
 
-# Informações sobre o módulo nativo do Python chamado 'math'.
+# Informações sobre Classes.
 """
-    O módulo math é um módulo padrão da biblioteca padrão do Python que fornece funções 
-    matemáticas e constantes matemáticas para realizar operações matemáticas mais 
-    avançadas em seus programas. Ele é amplamente utilizado quando você precisa realizar 
-    cálculos matemáticos, como cálculos trigonométricos, exponenciais, raízes quadradas, 
-    entre outros. Aqui estão algumas das funcionalidades principais do módulo math:
+    Uma classe é um conceito fundamental na programação orientada a objetos (POO), que é 
+    um paradigma de programação amplamente utilizado em muitas linguagens, incluindo 
+    Python, Java, C++, e muitas outras. 
 
-    Constantes Matemáticas: O módulo math inclui constantes matemáticas importantes, 
-    como π (pi) e e (número de Euler). Você pode acessar essas constantes usando math.pi 
-    e math.e.
+    Uma classe é uma estrutura que representa um modelo ou um plano para criar objetos. 
+    Ela define as características (atributos) e o comportamento (métodos) que os objetos 
+    criados a partir dessa classe terão. Em outras palavras, uma classe é um projeto ou 
+    uma descrição para criar objetos que compartilham as mesmas propriedades e 
+    funcionalidades.
 
-    Funções Matemáticas: O módulo fornece uma ampla variedade de funções matemáticas, 
-    como math.sqrt() (raiz quadrada), math.sin() (seno), math.cos() (cosseno), 
-    math.tan() (tangente), math.exp() (exponencial), math.log() (logaritmo natural), 
-    math.log10() (logaritmo na base 10), entre outras.
+    Aqui estão alguns conceitos-chave relacionados a classes:
 
-    Funções Trigonométricas: O módulo inclui funções trigonométricas, como seno, cosseno 
-    e tangente, que são úteis para trabalhar com ângulos e triângulos.
+    1. **Objeto:** Um objeto é uma instância de uma classe. Ele é uma entidade concreta 
+    criada com base no modelo definido pela classe. Os objetos têm atributos (dados) e 
+    métodos (ações) que são especificados pela classe.
 
-    Funções Hiperbólicas: Além das funções trigonométricas, o módulo math oferece funções 
-    hiperbólicas, como math.sinh() (seno hiperbólico) e math.cosh() (cosseno hiperbólico).
+    2. **Atributos:** Os atributos são variáveis que representam características do objeto. 
+    Por exemplo, se você tiver uma classe "Carro", os atributos podem incluir "cor",
+    "modelo" e "ano de fabricação".
 
-    Funções de Arredondamento: Você pode usar math.floor() (arredondamento para baixo) e 
-    math.ceil() (arredondamento para cima) para manipular números reais.
+    3. **Métodos:** Os métodos são funções definidas na classe que descrevem o 
+    comportamento do objeto. Por exemplo, uma classe "Carro" pode ter métodos como
+    "ligar", "desligar" e "acelerar".
 
-    Funções de Potenciação e Raiz: O módulo math fornece funções para elevar um número a 
-    uma potência, como math.pow(), e para calcular raízes, como math.sqrt().
+    4. **Encapsulamento:** A POO promove o encapsulamento, que é o princípio de que os 
+    detalhes internos de uma classe devem ser ocultos dos usuários. Isso é alcançado por 
+    meio do uso de modificadores de acesso, como público, privado e protegido.
 
-    Constantes de Precisão: Além de π e e, o módulo math também fornece constantes de 
-    precisão, como math.inf (infinito positivo) e math.nan (não é um número).
+    5. **Herança:** A herança permite que você crie uma nova classe com base em uma classe 
+    existente, herdando seus atributos e métodos. Isso promove a reutilização de código.
 
-    Funções de Sinal: Você pode usar funções como math.copysign() para copiar o sinal de 
-    um número de um para outro.
+    6. **Polimorfismo:** O polimorfismo permite que objetos de classes diferentes sejam 
+    tratados de maneira uniforme. Isso é alcançado por meio de interfaces comuns e métodos 
+    que podem ser implementados de maneira diferente em classes diferentes.
 
-    O módulo math é uma ferramenta poderosa para cálculos matemáticos em Python e é 
-    amplamente utilizado em áreas como ciência, engenharia, matemática e física. 
-    Ele oferece um conjunto abrangente de funções para ajudar a resolver problemas 
-    matemáticos complexos em seus programas.
+    A criação de classes permite organizar o código de forma mais eficiente, promove a 
+    reutilização de código e ajuda a modelar objetos do mundo real de forma mais precisa 
+    no software. Em linguagens de programação orientadas a objetos, como Python, a 
+    definição e o uso de classes são fundamentais para a criação de software eficaz e 
+    organizado.
+
+    
+    O método __init__ é um construtor especial que é chamado quando um objeto da classe 
+    é criado. Ele inicializa os atributos da classe com os valores fornecidos.
 """
