@@ -1,2 +1,2 @@
-# Ignorar a m pasta venv
+# Ignorar a pasta venv no reposítório do git.
 venv/
