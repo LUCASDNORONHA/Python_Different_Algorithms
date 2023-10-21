@@ -1,4 +1,4 @@
-# Ambiente Virtual (Virtual Inveronment - VENV) e Alguns Comandos pip
+# Ambiente Virtual (Virtual Invironment - VENV) e Alguns Comandos pip
 
 
 "O módulo venv oferece suporte à criação de “ambientes virtuais” leves, cada um com 

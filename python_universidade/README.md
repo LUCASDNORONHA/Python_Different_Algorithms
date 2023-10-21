@@ -15,7 +15,7 @@ Neste diretório estão armazenadas alguns dos códigos que estudei durante a di
 
 Os códigos presentes aqui representam apenas uma parte do material que consegui armazenar durante o curso, além de estudos complementares. Decidi compartilhá-los para ilustrar minha jornada de aprendizado e fornecer um recurso para outros estudantes interessados. 
 
+
+
 > ## *O conhecimento deve ser compartilhado.*
 
-
-![Logo Python](https://www.python.org/static/img/python-logo@2x.png)
