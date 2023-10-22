@@ -2,7 +2,7 @@ def minNum(threshold, points):
     n = len(points) # Retorna o número de elementos na lista de notas.
     dp = [0] * n # Multiplicar n vezes o elemento 0 e atribuindo essa lista a variável dp.
     
-    dp[0] = 1 # Atulizando o índice 0 pelo valor 1.
+    dp[0] = 1 # Atualizando o índice 0 pelo valor 1.
     
     # loop for para iterar cada índice a partir de 1 até n. 
     # Lembrando que n é valor da quantidade de elementos da lista de notas.
