@@ -1,5 +1,7 @@
 # Repositório Python
 
+*(Em processo de atualização)*
+
 Este repositório tem o objetivo de armazenar e documentar meu
 aprendizado com a linguagem de programação Python. 
 
